@@ -16,7 +16,7 @@
 
 body {
  font-family: 'Overpass', sans-serif;
- font-size: 1.6rem;
+ font-size: 1.5rem;
  margin: 0;
  background-color: var(--color-very-dark-blue);
  display: flex;
@@ -29,7 +29,7 @@ body {
  width: 95%;
  max-width: 40rem;
  border-radius: 8px;
- padding: 2rem;
+ padding: 2.5rem;
  color: var(--color-white);
  background: var(--color-dark-gray);
 }
@@ -38,18 +38,54 @@ body {
  height: 100%;
 }
 
+.rating.hidden {
+ display: none
+}
+
 .rating__icon {
  display: inline-block;
  padding: 1.6rem;
  margin: 0;
  border-radius: 50%;
  background: var(--color-icons-bg);
+ margin-bottom: 1.6rem;
 }
+
+
 .rating__icon-image {
  display: block;
 }
 .rating--thanks {
- display: none;
+ display: block;
+ text-align: center;
+}
+
+.rating__rating {
+ font-style: normal;
+}
+
+.rating__img--thanks {
+  margin-bottom: 1.6rem;
+}
+
+.rating__info {
+ color: var(--color-primary);
+ background: var(--color-icons-bg);
+ padding: 1rem 1.5rem;
+ width: 55%;
+ margin-inline: auto;
+ border-radius: 3rem;
+}
+
+.rating__title {
+ margin-top: 0;
+ margin-bottom: 1.6rem;
+}
+
+.rating__text {
+ margin-top: 0;
+ line-height: 1.7;
+ margin-bottom: 1.6rem;
 }
 
 .rating__toggle {
@@ -57,6 +93,7 @@ body {
  height: 6.5rem;
  align-items: center;
  justify-content: space-between;
+ margin-bottom: 1.5rem;
 }
 
 .rating__number {
@@ -68,6 +105,12 @@ body {
  justify-content: center;
  align-items: center;
  cursor: pointer;
+ transition: background .25s;
+}
+
+.rating__number:hover,
+.rating__number:active {
+ background: var(--color-primary);
 }
 
 .btn {
@@ -82,4 +125,10 @@ body {
  margin-top: 2rem;
  cursor: pointer;
  letter-spacing: 1.5px;
+ transition: background .25s;
+}
+
+.btn:hover,
+.btn:active {
+ background:hsla(25, 97%, 53%, 0.575);
 }

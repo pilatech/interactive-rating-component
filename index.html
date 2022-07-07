@@ -14,7 +14,7 @@
 </head>
 <body>
  <main class="container">
-    <section class="rating">
+    <section class="rating rating--front">
     <figure class="rating__icon">
      <img src="images/icon-star.svg" alt="rating icon" class="rating__icon-image">
     </figure>
@@ -32,13 +32,16 @@
      </article>
      <button class="btn">submit</button>
     </section>
-    <section class="rating rating--thanks">
+    <section class="rating rating--thanks hidden">
      <img src="images/illustration-thank-you.svg" alt="" class="rating__img rating__img--thanks">
-     <p class="rating__info">You selected 4 out of 5</p>
-     <h2 class="rating__title rating__title--thanks">Thank You</h2>
+     <p class="rating__info">You selected <i class="rating__rating">0</i> out of 5</p>
+     <h2 class="rating__title rating__title--thanks">Thank You!</h2>
      <p class="rating__text rating__text--thanks">
       We appreciate you taking the time to give a rating. If you ever need more support, 
      don’t hesitate to get in touch!
      </p>
     </section>
  </main>
+ <script src="script.js"></script>
+</body>
+</html>
